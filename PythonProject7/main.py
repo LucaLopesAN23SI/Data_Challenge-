@@ -1,16 +1,21 @@
 # This is a sample Python script.
+from ftplib import print_line
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
 
 # Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+varaible = pd.read_csv('team17_callcenter.csv')
+
+#finding out the resolution rate by call type
+resolved = varaible.groupby('call_type')['resolved'].value_counts(normalize=True)
+print_line(resolved)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#Finding the which time of day is the longest
+groupByDay = varaible.groupby('time_of_day')['duration_minutes'].mean()
+print_line(groupByDay)
