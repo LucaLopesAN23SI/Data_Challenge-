@@ -9,6 +9,9 @@
 <<<<<<< Updated upstream
 =======
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +44,11 @@
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "git-widget-placeholder": "DataCleaning",
+=======
+    "git-widget-placeholder": "main",
+>>>>>>> Stashed changes
 =======
     "git-widget-placeholder": "main",
 >>>>>>> Stashed changes
