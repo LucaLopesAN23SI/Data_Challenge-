@@ -4,11 +4,14 @@ from ftplib import print_line
 import pandas as pd
 import numpy as np
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import seaborn as sns
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings
 
+=======
+>>>>>>> Stashed changes
 
 DataFrame = pd.read_csv('team17_callcenter.csv')
 #finding out the resolution rate by call type
@@ -51,6 +54,9 @@ print_line(groupByDay)
 highPriority = ModifiedDataFrame.groupby('priority')['resolved'].value_counts(normalize=True)*100
 print_line(highPriority)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 print_line(highPriority)
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
