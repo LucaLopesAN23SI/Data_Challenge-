@@ -19,4 +19,3 @@ print_line(groupByDay)
 #finding the percentage of resolved high priority calls
 highPriority = ModifiedDataFrame.groupby('priority')['resolved'].value_counts(normalize=True)*100
 print_line(highPriority)
-
