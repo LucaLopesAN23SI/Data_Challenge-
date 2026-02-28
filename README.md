@@ -119,4 +119,5 @@ Rates of resolved call per minute of  waiting
         P-values: 0.738279
 Results: With the p-value is greater than 0.05, we fail to resject the null hypothesis
 This indicates that an extremely weak and insignificant relationship betwee the call duration and the resolution
-Also, the average duration of the resolved calls(9.44 min) by only 10 seocnds, which means there was no meaningful difference.
+Also, the average duration of the resolved calls(9.60 min) differes from unresolved calls (9.44) by only 16 seocnds, which means there was no meaningful difference.
+Call duration doesn't appear to be a a relible way to predict the success of the calls
