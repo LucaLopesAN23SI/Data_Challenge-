@@ -1,3 +1,6 @@
+# Video
+https://drive.google.com/file/d/1hmfan-eteGmjJHCOUJsKxs8hqeAlcYRh/view?usp=drive_link
+
 # Data Challenge
 
 ## Overview 
