@@ -20,6 +20,7 @@ We found flat lines in our "duration per minutes" graph which represent how many
 We believe this data is also important as it tells us that they need to improve their customer retention training.
 ### Cleaning:
 We deleted the rows with the null values since both wait time mins and customer satisfaction both have a null representation of less than 5%.
+This is because when the ammount of inconsistencies are less than 5%, this wouldnt affect the data if it were to be deleted.
 The modified data is also included in the repo.
 ## Analysis:
 ### Resolution rate by call type
@@ -42,7 +43,8 @@ Here lies the chart of customer satisfaction compared with their wait time (per 
      3.0/5.0              2.96m
      4.0/5.0              2.57m
      5.0/5.0              2.55m
-
+The data shows that wait time peaks at the 3 stars.
+This means that wait time is not a factor thataffects customer satisfaction.
 ### Longest Average Call Duration
 Percentages of high priority calls:
 
@@ -73,45 +75,48 @@ Rates of successful calls vs their Duration:
 
 Rates of resolved call per minute of  waiting
 
-    Duration      Resolved %
-         1         72.131148
-         2         68.253968
-         3         76.136364
-         4         70.512821
-         5         77.108434
-         6         77.142857
-         7         70.000000
-         8         75.757576
-         9         77.049180
-        10         82.258065
-        11         71.428571
-        12         73.584906
-        13         70.270270
-        14         73.333333
-        15         71.052632
-        16         73.529412
-        17         77.272727
-        18         85.714286
-        19         77.777778
-        20         80.952381
-        21         70.588235
-        22         66.666667
-        23         63.636364
-        24         90.000000
-        25         71.428571
-        26         75.000000
-        27         83.333333
-        28         50.000000
-        29         50.000000
-        30         50.000000
-        32        100.000000
-        33        100.000000
-        35        100.000000
-        37        100.000000
-        45        100.000000
-        48        100.000000
+    Duration  Resolution Rate  Call Count
+        1        72.131148          61
+        2        68.253968          63
+        3        76.136364          88
+        4        70.512821          78
+        5        77.108434          83
+        6        77.142857          70
+        7        70.000000          70
+        8        75.757576          66
+        9        77.049180          61
+        10        82.258065         62
+        11        71.428571         42
+        12        73.584906         53
+        13        70.270270         37
+        14        73.333333         30
+        15        71.052632         38
+        16        73.529412         34
+        17        77.272727         22
+        18        85.714286         21
+        19        77.777778          8
+        20        80.952381         21
+        21        70.588235         17
+        22        66.666667          6
+        23        63.636364         11
+        24        90.000000         10
+        25        71.428571          7
+        26        75.000000          8
+        27        83.333333          6
+        28        50.000000          2
+        29        50.000000          2
+        30        50.000000          4
+        32       100.00000           2
+        33       100.000000          1
+        35       100.000000          1
+        37       100.000000          1
+        38         0.000000          1
+        40         0.000000          1
+        45       100.000000          1
+        48       100.000000          1
 
-Results: No. There does not seem to be a correlation between the call duration and customer satisfaction, as shown in both rows 20 and 28. 
-Row 20 contains a significantly higher customer satisfaction score then rows 21,21,23.
-Rows 28, 29 and 30 all have mixed reviews with the success having the same chance of a coin flip. 
-Rows 32 and above dont show an accurate representation since there are no, idk.....
+        Correlation: 0.010085
+        P-values: 0.738279
+Results: With the p-value is greater than 0.05, we fail to resject the null hypothesis
+This indicates that an extremely weak and insignificant relationship betwee the call duration and the resolution
+Also, the average duration of the resolved calls(9.44 min) by only 10 seocnds, which means there was no meaningful difference.
